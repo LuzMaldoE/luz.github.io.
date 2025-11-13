@@ -1,0 +1,173 @@
+/* Estilos Globales y Tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #007bff; /* Azul primario */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Sección HERO/Header */
+.hero {
+    background-color: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid #007bff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-links a, .contact-links span {
+    margin: 0 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* Secciones de Habilidades y Proyectos */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+/* Habilidades */
+.skills-section {
+    background-color: #ffffff;
+}
+
+.skill-group {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Proyectos */
+.projects-section {
+    background-color: #f8f9fa;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #007bff;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #212529; /* Negro */
+}
+
+.project-card .role {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.project-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Formación */
+.education-section {
+    background-color: #e9ecef;
+    padding: 30px 0;
+}
+
+.education-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.education-section li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40; /* Gris oscuro */
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Responsive Design (Para que se vea bien en móviles) */
+@media (min-width: 768px) {
+    .skills-section .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .project-card {
+        padding: 30px;
+    }
+
+    .education-section ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
